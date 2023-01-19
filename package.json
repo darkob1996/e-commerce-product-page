@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-product-page",
+  "version": "1.0.0",
+  "description": "E-commerce product page website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "darko boljanovic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

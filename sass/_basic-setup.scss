@@ -1,0 +1,41 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-1000) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    font-size: 50%;
+  }
+}
+
+body {
+  color: $black;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: minmax(2rem, 10%) 1fr minmax(2rem, 10%);
+  height: 100%;
+}
+
+.header {
+  grid-column: 2 / 3;
+}
+
+.main {
+  grid-column: 2 / 3;
+
+  @media only screen and (max-width: $bp-500) {
+    grid-column: 1 / -1;
+  }
+}
